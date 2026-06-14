@@ -14,13 +14,13 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests(auth -> auth
-                // 1. Allow the background image and Bootstrap to load without logging in
+                
                 .requestMatchers("/user_login.png").permitAll() 
-                // 2. Any other page requires a login
+                
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
-                // 3. Tell Spring to use our custom login.html
+            
                 .loginPage("/login") 
                 .defaultSuccessUrl("/", true)
                 .permitAll()
