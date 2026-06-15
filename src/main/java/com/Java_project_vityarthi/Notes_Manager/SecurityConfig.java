@@ -15,6 +15,7 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests(auth -> auth
                 
+                .requestMatchers("/health").permitAll()
                 .requestMatchers("/user_login.png").permitAll() 
                 
                 .anyRequest().authenticated()
