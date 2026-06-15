@@ -2,6 +2,29 @@
 
 Spring Boot notes app with Thymeleaf, Spring Security, JPA, and MySQL.
 
+Live Demo : notesapp-production-2a7b.up.railway.app
+
+for login purposes use the given credentials :
+username : "user"
+password : "1234"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Deploy on Railway
 
 This repo includes `railway.toml`, so Railway can build and start the app from the repository.
